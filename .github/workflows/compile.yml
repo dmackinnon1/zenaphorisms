@@ -4,7 +4,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: texlive/texlive:TL2023-historic
+    container: texlive/texlive:TL2025-historic
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
