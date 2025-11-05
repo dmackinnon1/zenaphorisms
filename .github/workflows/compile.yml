@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: cleanup old pdfs
+        run: "git rm  --ignore-unmatch *.pdf"
+      - name: Run latexmk
       - name: Run LaTeX action on main.tex
         uses: xu-cheng/latex-action@v3
         with:
